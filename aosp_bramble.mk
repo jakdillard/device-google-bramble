@@ -45,6 +45,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 $(call inherit-product, device/google/bramble/device-bramble.mk)
 $(call inherit-product-if-exists, vendor/google_devices/bramble/proprietary/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/bramble/prebuilts/device-vendor-bramble.mk)
+$(call inherit-product-if-exists, vendor/google/bramble/bramble-vendor.mk)
+$(call inherit-product-if-exists, vendor/google/redfin/redfin-vendor.mk)
+
+# Add configuration
+$(call inherit-product, vendor/eaosp/common/config.mk)
 
 # Exclude features that are not available on AOSP devices.
 PRODUCT_COPY_FILES += \
