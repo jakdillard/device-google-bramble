@@ -57,7 +57,12 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # PRODUCT_RESTRICT_VENDOR_FILES := all
 
 PRODUCT_MANUFACTURER := Google
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := google
 PRODUCT_NAME := aosp_bramble
 PRODUCT_DEVICE := bramble
-PRODUCT_MODEL := AOSP on bramble
+PRODUCT_MODEL := Pixel 4a 5G
+
+# Match stock product info
+PRODUCT_OVERRIDE_INFO := true
+PRODUCT_OVERRIDE_FINGERPRINT := google/bramble/bramble:11/RQ1A.210105.003/7002689:user/release-keys
+PRODUCT_OVERRIDE_DESC := bramble-user 11 RQ1A.210105.003 7002689 release-keys
